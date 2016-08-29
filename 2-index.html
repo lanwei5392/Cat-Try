@@ -1,0 +1,68 @@
+<!DOCTYPE html> 
+
+<html>
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Cat Try</title>
+</head>
+
+<body>
+
+<p>Click the button to create an IMG element.</p>
+<button onclick="myFunction(cats)">Try it</button>
+
+<script>
+	var cats = [
+	{
+		img : "images/cat-1.jpg",
+		name : "cat-1",
+		clickcount : 0
+	},
+
+	{
+		img : "images/cat-2.jpg",
+		name : "cat-2",
+		clickcount : 0
+	},
+
+ 	{
+		img : "images/cat-3.jpg",
+		name : "cat-3",
+		clickcount : 0
+	},
+
+	{
+		img : "images/cat-4.jpg",
+		name : "cat-4",
+		clickcount : 0
+	},
+	
+	{
+		img : "images/cat-5.jpg",
+		name : "cat-5",
+		clickcount : 0
+	}
+];
+
+	function myFunction() {
+
+		for ( var i= 0; i < cats.length; i++){
+			var cat = cats[i];
+			var x = document.createElement("IMG");
+			var y = cat.name;
+
+			x.setAttribute("src", cat.img);
+			document.body.appendChild(x);
+			document.getElementById(y);
+			console.log(y);
+
+		}
+	}
+
+</script>
+</body>
+</html>
+
+ 

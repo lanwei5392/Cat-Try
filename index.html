@@ -1,14 +1,37 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
+
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name = "viewpoint" content = "width=device-width initial-scale=1.0">
-    <title>Cat Try</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Cat Try</title>
 </head>
+
 <body>
-    <!script src="js/resources.js"></script>
-    <script src="js/app.js"></script>
-    <!script src="js/engine.js"></script>
+	<div id="page-frame">
+		<div id="header" class="flex-box">
+			<div id="header-title">
+				<h1>Cat Clicker</h1>
+			</div>
+		</div>
+
+		<div id="main" class="flex-box">
+			<div id="cat-group" class="flex-box">
+				<h2>Select a Cat</h2>
+				<u1 id="cat-list" class="white"></u1>		
+			</div>
+			<div id="cat-view" class="cat-view">
+				<div id = "selected-cat">
+					<h2>Cat Name</h2>
+					<p class="clickcount">I have been clicked <span id="clickcount"></span>times.</p>
+					<p><img id="cat-image" src="" alt="picture of cat"></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.js"></script>
 </body>
 </html>
+
+ 

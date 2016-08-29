@@ -1,4 +1,74 @@
-<style>
-.body {
-	text-align: center;
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+head,
+body,
+header,
+main {
+  display: block;
+}
+
+body,
+div,
+h1,
+h2,
+ul,
+p {
+  padding:0;
+  margin:0;
+  font-family: 'Catamaran', sans-serif;
+}
+
+h1 {
+	font-size: 40px;
+}
+
+h2 {
+	font-size: 25px;
+}
+
+p {
+	font-size: 20px;
+}
+
+
+.page-frame {
+  margin: 0 auto;
+  max-width: 800px;
+  min-width: 300px;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.header,
+.main {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header {
+  justify-content: center;
+}
+
+.main {
+  justify-content: left;
+}
+
+.cat-group {
+  width: 25%;
+}
+
+.cat-view {
+  width: 75%;
+}
+
+img {
+  max-width: 300px;
 }
